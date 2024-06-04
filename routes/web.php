@@ -8,6 +8,8 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/ventas', [VentasProducto::class, 'ventasP']);
 Route::get('/ventas/electrodomesticos', [VentasProducto::class, 'electrodomesticos']);
 
+Route::get('/mvc', [HomeController::class, 'index']);
+
 Route::get('/chiperia', function () {
     return 'Benvinguts a la chiperia de Juan';
 });
