@@ -2,8 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\VentasProducto;
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/ventas', [VentasProducto::class, 'ventasP']);
+Route::get('/ventas/electrodomesticos', [VentasProducto::class, 'electrodomesticos']);
 
 Route::get('/chiperia', function () {
     return 'Benvinguts a la chiperia de Juan';
